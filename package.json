@@ -9,7 +9,9 @@
     "start": "next start -H 0.0.0.0",
     "lint": "next lint",
     "kiosk": "next start -H 0.0.0.0 -p 3001",
-    "send-emails": "tsx scripts/send-emails.ts"
+    "send-emails": "tsx scripts/send-emails.ts",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000",
+    "tunnel:kiosk": "cloudflared tunnel --url http://localhost:3001"
   },
   "dependencies": {
     "better-sqlite3": "^11.7.0",
